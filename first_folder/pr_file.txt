@@ -1,1 +1,0 @@
-tento text jsme vložili v lokální větvi main
