@@ -15,3 +15,13 @@ petrolCar.logCarProperties();
 const newCar = dieselCar;
 newCar.color = "Růžová";
 dieselCar.logCarProperties();
+
+const electricCar = new CarBlueprint("Modrá", "EV 160kW", "Elektřina", "Blesk");
+electricCar.logCarProperties();
+dieselCar.repaint("Zelená");
+dieselCar.logCarProperties();
+//Jelikož newCar odkazuje na stejný objekt jako dieselCar, newCar bude taky zelené:
+newCar.logCarProperties();
+
+const dieselCarColor = dieselCar.getColor();
+console.log("Barva Diesel auto je: " + dieselCarColor);
